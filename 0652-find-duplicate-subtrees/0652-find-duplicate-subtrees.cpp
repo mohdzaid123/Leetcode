@@ -17,7 +17,7 @@ public:
         }
         string s=to_string(root->val)+","+getSubTreesString(root->left,mp,res)+","+getSubTreesString(root->right,mp,res);
     if(mp[s]==1){
-      res.push_back(root);
+     res.push_back(root);
 }
 mp[s]++;
 
