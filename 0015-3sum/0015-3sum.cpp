@@ -37,7 +37,7 @@ public:
 
         sort(begin(nums),end(nums));
         // fixing n1
-        for(int i=0;i<n;i++){
+        for(int i=0;i<=n-3;i++){
                 if(i>0 && nums[i]==nums[i-1]){
                     continue;
                 }
