@@ -1,19 +1,16 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        int n=s.length();
+        stringstream  ss(s);
 
-        for(int i=0;i<n;i++){
-            if(s[i]!=' '){
-                    int j=i;
-                    j++;
-                    while(j<n&&s[j]!=' '){
-                        j++;
-                    }
-                    reverse(begin(s)+i,begin(s)+j);
-                    i=j;
-            }
+        string token="";
+        string result="";
+
+        while(ss>>token){
+            reverse(begin(token),end(token));
+            result+=token+" ";
         }
-        return s;
+        return result.substr(0,result.length()-1);
     }
+   
 };
