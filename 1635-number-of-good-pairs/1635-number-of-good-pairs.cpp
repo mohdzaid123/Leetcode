@@ -1,11 +1,18 @@
 class Solution {
 public:
-        int numIdenticalPairs(vector<int>& A) {
-        int ans = 0;
-        unordered_map<int, int> cnt;
-        for (int x: A) {
-        ans += cnt[x]++;
+    int numIdenticalPairs(vector<int>& nums) {
+        int n=nums.size();
+
+        int result=0;
+
+        for(int i=0;i<n-1;i++){
+            int num=nums[i];
+            for(int j=i+1;j<n;j++){
+                if(nums[i]==nums[j]){
+                    result++;
+                }
+            }
         }
-        return ans;
+        return result;
     }
 };
