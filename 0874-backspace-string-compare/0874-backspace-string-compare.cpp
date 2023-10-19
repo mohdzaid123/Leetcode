@@ -1,25 +1,50 @@
 class Solution {
 public:
-string buildString(string &s){
-
-    string temp="";
-    int n=s.length();
-    int i=0;
-    while(i<n){
-        if(s[i] !='#')
-            temp.push_back(s[i]);
-        else if(temp.length()>0)
-        {
-            temp.pop_back();
-        }
-        i++;
-    }
-    return temp;
-}
     bool backspaceCompare(string s, string t) {
-        string buildForms= buildString(s);
-        string buildFromt= buildString(t);
-
-        return buildForms==buildFromt;
+        int m = s.length();
+        int n = t.length();
+        
+        int i = m-1, j = n-1;
+        int skip_s = 0;
+        int skip_t = 0;
+        
+        while(i >= 0 || j >= 0) {
+            
+            while(i >= 0) {
+                if(s[i] == '#') {
+                    skip_s++;
+                    i--;
+                } else if(skip_s > 0) {
+                    skip_s--;
+                    i--;
+                } else {
+                    break;
+                }
+            }
+            
+            while(j >= 0) {
+                if(t[j] == '#') {
+                    skip_t++;
+                    j--;
+                } else if(skip_t > 0) {
+                    skip_t--;
+                    j--;
+                } else {
+                    break;
+                }
+            }
+            
+            char first  = i < 0 ? '$' : s[i];
+            char second = j < 0 ? '$' : t[j];
+            
+            if(first != second)
+                return false;
+            
+            i--;
+            j--;
+        }
+        
+        return true;
+        
     }
 };
