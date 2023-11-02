@@ -1,30 +1,25 @@
 class Solution {
 public:
     string customSortString(string order, string s) {
-        string ans;
-        //step 1
-        map<char,int> mpp;
-        for(auto it: s)
-            mpp[it]++;
-        //step 2 
-        for(int i=0;i<order.length()-1;i++){
-          if(mpp.find(order[i])!=mpp.end())
-          {
-              int count=mpp[order[i]];
-              while(count>0){
-                  ans.push_back(order[i]);
-                  count--;
-                  }
-          }
-            mpp.erase(order[i]);
+        map<char,int> mp;
+        string ans="";
+        for(auto x:s){
+                mp[x]++;
         }
-        //step 3
-        for(auto it: mpp){
-          int count=it.second;
-            while(count>0){
-                ans.push_back(it.first);
-                count--;}
+        for(auto x:order){
+            if(mp.find(x)!=mp.end()){
+                auto temp=mp.find(x);
+                int count=temp->second;
+                // c->5
+                string s(count,x);
+                ans+=s;
+                mp.erase(x);
+            }
         }
+        for(auto x:mp){
+                string s(x.second,x.first);
+                ans+=s;
+        }   
         return ans;
     }
 };
