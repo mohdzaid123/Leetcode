@@ -12,7 +12,7 @@ public:
                     (c == ']' && st.top() != '[')) {
                     return false; // the string is not valid, so return false
                 }
-                st.pop(); // otherwise, pop the opening bracket from the stack
+                st.pop(); // otherwise, pop the opening bracket from the stack and and 
             }
         }
         return st.empty(); // if the stack is empty, all opening brackets have been matched with their corresponding closing brackets,
