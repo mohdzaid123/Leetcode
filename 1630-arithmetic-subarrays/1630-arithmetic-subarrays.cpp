@@ -1,17 +1,36 @@
 class Solution {
 public:
     bool check(vector<int>& arr){
-        sort(begin(arr),end(arr));
-        
+       
         int n=arr.size();
-        int d=arr[1]-arr[0];
+        int minE=INT_MAX;
+        int maxE=INT_MIN;
         
-        for(int i=2;i<n;i++ ){
-            if(arr[i]-arr[i-1]!=d){
+        
+        unordered_set<int>st;
+        
+        for(int &num:arr){
+            minE=min(minE,num);
+            maxE=max(maxE,num);
+            st.insert(num);
+        }
+        
+        if((maxE-minE)%(n-1)!=0){
+            return false;
+        }
+        int d=(maxE-minE)/(n-1);
+        
+        int curr=minE;
+        
+        while(curr<maxE){
+            if(st.find(curr)==st.end()){
                 return false;
             }
+            curr+=d;
         }
+        
         return true;
+        
         
     }
     vector<bool> checkArithmeticSubarrays(vector<int>& nums, vector<int>& l, vector<int>& r) {
