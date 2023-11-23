@@ -30,11 +30,11 @@ private:
         // Check if the set of unique elements in the subarray has only one element
         // If yes, the subarray can be rearranged to form an arithmetic sequence
 //         check
-        unordered_set<int> uniqueElements(arr.begin(), arr.end());
+//         unordered_set<int> uniqueElements(arr.begin(), arr.end());
 
-        if (uniqueElements.size() == 1) {
-            return true;
-        }
+//         if (uniqueElements.size() == 1) {
+//             return true;
+//         }
 
         // Sort the subarray and check if the differences are consistents
         vector<int> sortedArr = arr;
