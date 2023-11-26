@@ -3,18 +3,22 @@ public:
     int largestSubmatrix(vector<vector<int>>& matrix) {
         int m =matrix.size();
         int n=matrix[0].size();
-        
         int maxArea=0;
         
+        vector<int> prevRow(n,0);
+        
+        
+        
         for(int row=0;row<m;row++){
+            vector<int> currRow=matrix[row];
             for(int col=0;col<n;col++){
-                if(matrix[row][col]==1&& row>0){
-                    matrix[row][col]+=matrix[row-1][col]; //continous 1's
+                if(currRow[col]==1){
+                    currRow[col]+=prevRow[col]; //continous 1's
                     
                 }
             }
             
-            vector<int>heights=matrix[row];
+            vector<int>heights=currRow;
             sort(begin(heights),end(heights),greater<int>());
             
             
@@ -24,6 +28,7 @@ public:
                 
                 maxArea=max(maxArea,base*height);
             }
+            prevRow=currRow;
         }
         return maxArea;
     }
