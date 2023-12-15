@@ -1,23 +1,24 @@
 class Solution {
 public:
-    string destCity(vector<vector<string>>& paths) {
-        unordered_set<string> st;
-        
-        for(auto &path:paths){
-            string source=path[0];
-            st.insert(source);
-        }
-        
-        for(auto &path:paths){
-            string dest =path[1];
-            
-            if(st.find(dest)==st.end()){
-                return dest;
-            }
-        }
-        
-        return "";
-        
-        
+   
+
+string destCity(std::vector<std::vector<std::string>>& paths) {
+    unordered_set<std::string> outgoingCities;
+
+    // Add all cities with outgoing paths to the set
+    for (const auto& path : paths) {
+        outgoingCities.insert(path[0]);
     }
+
+    // Find the city without outgoing path
+    for (const auto& path : paths) {
+        if (outgoingCities.find(path[1]) == outgoingCities.end()) {
+            return path[1];
+        }
+    }
+
+    // It is guaranteed that there will always be a destination city,
+    // so this line should never be reached.
+    return ""; 
+}
 };
