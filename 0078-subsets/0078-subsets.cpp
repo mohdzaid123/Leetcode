@@ -1,6 +1,6 @@
 class Solution {
 public:
-    void subSequence(vector<int>& nums, int index, int n, vector<vector<int>> &ans, vector<int> temp)
+    void subSequence(vector<int>& nums, int index, int n, vector<vector<int>> &ans, vector<int> &temp)
 {
     if (index == n)
     {
@@ -13,6 +13,7 @@ public:
     // Include
     temp.push_back(nums[index]);
     subSequence(nums, index + 1, n, ans, temp);
+        temp.pop_back();
 }
     
     
