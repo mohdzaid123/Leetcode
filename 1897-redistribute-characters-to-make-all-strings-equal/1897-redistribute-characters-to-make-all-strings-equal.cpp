@@ -10,13 +10,19 @@ public:
             }
         }
         
-        for(auto &freq:count){
-            // int freq=it.second;
-            if(freq%n!=0){
-                return false;
-            }
-        }
-        return true;
+        // for(auto &freq:count){
+        //     // int freq=it.second;
+        //     if(freq%n!=0){
+        //         return false;
+        //     }
+        // }
+        
+        auto lamda=[&](int freq){
+            return freq%n==0;
+        };
+        
+        return all_of(begin(count),end(count),lamda);
+        // return true;
         
     }
 };
