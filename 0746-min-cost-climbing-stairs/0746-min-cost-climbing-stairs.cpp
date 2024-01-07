@@ -45,6 +45,26 @@ public:
         
        return min(dp[n-1],dp[n-2]);
     }
+    
+    int solve3(vector<int>&cost,int n){
+//         base case
+//         step 1 create dp array
+        vector<int> dp(n+1);
+        // base case analyse
+      int prev2 =cost[0];
+       int prev1=cost[1];
+        
+//         step 3
+        for(int i=2 ;i<n;i++){
+            int curr=cost[i]+min(prev1,prev2);
+            prev2=prev1;
+            prev1=curr;
+            
+        }
+        
+       return min(prev1,prev2);
+    }
+    
     int minCostClimbingStairs(vector<int>& cost) {
         // int n=cost.size();
         // // can be simlified
@@ -54,7 +74,7 @@ public:
         // step 1
         // vector<int>dp(n+1,-1);
         // int ans=min(solve(cost,n-1,dp),solve(cost,n-2,dp));
-        return solve2(cost,n);
+        return solve3(cost,n);
         
     }
 };
