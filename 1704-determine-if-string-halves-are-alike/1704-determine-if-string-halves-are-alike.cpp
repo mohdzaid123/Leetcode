@@ -13,17 +13,17 @@ public:
         int countL=0;
         int countR=0;
 
-        unordered_set<char> st;
-        st.insert('a');
-        st.insert('e');
-        st.insert('i');
-        st.insert('o');
-        st.insert('u');
-        st.insert('A');
-        st.insert('E');
-        st.insert('I');
-        st.insert('O');
-        st.insert('U');
+        // unordered_set<char> st;
+        // st.insert('a');
+        // st.insert('e');
+        // st.insert('i');
+        // st.insert('o');
+        // st.insert('u');
+        // st.insert('A');
+        // st.insert('E');
+        // st.insert('I');
+        // st.insert('O');
+        // st.insert('U');
 
         while(i<n/2&&j<n){
             if(isVowels(s[i])) countL++;
