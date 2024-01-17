@@ -10,7 +10,7 @@ public:
         unordered_set<int>st;
         
         for(auto &it:mp){
-            int freq=it.second;
+            int freq=it.second; //1 2 3 3
             if(st.find(freq)!=st.end()){
                 return false;
             }
