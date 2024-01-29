@@ -12,15 +12,14 @@ int peekEl=-1;
             peekEl=x;
         }
         input.push(x);
-
     }
     
     int pop() {
         if(output.empty()){
-            while(!input.empty()){
+        while(!input.empty()){
         output.push(input.top());
         input.pop();
-            }
+        }
         }
         int val=output.top();
         output.pop();
@@ -29,7 +28,7 @@ int peekEl=-1;
     
     int peek() {
         if(output.empty()){
-                return peekEl;
+            return peekEl;
         }
         return output.top();
     }
