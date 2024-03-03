@@ -11,7 +11,7 @@ public:
                     (c == ')' && st.top() != '(') || // the closing bracket doesn't match the corresponding opening bracket at the top of the stack
                     (c == '}' && st.top() != '{') ||
                     (c == ']' && st.top() != '[')) {
-                    return false; // the string is not valid, so return false
+                    return false; // the string is not valid, so return false and
                 }
                 st.pop(); // otherwise, pop the opening bracket from the stack and and 
             }
