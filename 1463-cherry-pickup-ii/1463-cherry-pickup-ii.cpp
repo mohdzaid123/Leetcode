@@ -1,51 +1,38 @@
 class Solution {
 public:
-    int cherryPickup(vector<vector<int>>& grid) {
-        vector<int> dir={-1,0,1};
-        int row = grid.size();
-        int col = grid[0].size();
-        int dp[row][col][col]; 
-        
-        for(int i = 0; i < row; i++){
-            for(int j = 0; j < col; j++){
-                for(int k = 0; k < col; k++){
-                    dp[i][j][k] = -1;
+    int m,n;
+    int t[71][71][71];
+    int solve(vector<vector<int>>& grid,int row,int c1,int c2){
+        if(row>=m){  //out of bound
+            return 0;
+        }
+        if(t[row][c1][c2]!=-1){
+            return t[row][c1][c2];
+        }
+        int cherry=grid[row][c1];
+        if(c1!=c2){ //same cell can be taken only once
+            cherry+=grid[row][c2];
+        }
+        int ans=0;
+        for(int i=-1;i<=1;i++){ //R1
+            for(int j=-1;j<=1;j++){ //R2
+                int newRow=row+1;
+                int new_c1 =c1+i;
+                int new_c2=c2+j;
+                
+                if(new_c1>=0&&new_c1<n&&new_c2>=0&&new_c2<n){
+                    ans=max(ans,solve(grid,newRow,new_c1,new_c2));
                 }
+                
             }
         }
-//         col1 
-//         col2 
-        int col1 = 0;
-        int col2 = col - 1; 
-        
-        dp[0][col1][col2] = grid[0][col1] + grid[0][col2];
-        
-        int ans = dp[0][col1][col2]; 
-        
-        for(int i = 1; i < row; i++){ 
-            for(int c1 = 0; c1 < col; c1++){ 
-                for(int c2 = 0; c2 < col; c2++){
-                    int prev = dp[i - 1][c1][c2];
-                    if(prev >= 0){
-                        for(int d1: dir){ 
-                            col1 = d1 + c1; 
-                            for(int d2: dir){ 
-                                col2 = d2 + c2; 
-                                if(inRange(col1, col) && inRange(col2, col)){
-                                    dp[i][col1][col2] = max(dp[i][col1][col2], prev+(col1 == col2 ? grid[i][col1] : (grid[i][col1] + grid[i][col2])));
-                                    
-                                    ans = max(ans, dp[i][col1][col2]); 
-                                }
-                            }
-                        }
-                    }
-                    
-                }
-            }
-        }
-        return ans; 
+        return t[row][c1][c2]= cherry+ans;
     }
-    bool inRange(int val, int limit){
-        return 0 <= val && val < limit;
+        
+    int cherryPickup(vector<vector<int>>& grid) {
+        m=grid.size();
+        n=grid[0].size();
+        memset(t,-1,sizeof(t));
+        return solve(grid,0,0,n-1);
     }
 };
