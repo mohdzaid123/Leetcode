@@ -1,33 +1,24 @@
+vector<int>dp(10001,-1);
 class Solution {
 public:
-    int minCoinsToGetS(vector<int>& coins, int n, int S, vector<vector<int>>& t) {
-        if(t[n][S] != -1)
-            return t[n][S];
-        
-        if(n == 0)
-            return INT_MAX-1;
-        if(S == 0)
-            return 0;
-        if(n == 1) {
-            if(S % coins[0] == 0)
-                return t[n][S] = S/coins[0];
-            else
-                return t[n][S] = INT_MAX-1;
+    int solve(int n){
+         if(n<=0){
+         return 0;   
+        }
+        int ans=INT_MAX;
+        if(dp[n]!=-1){
+            return dp[n];
         }
         
-        if(coins[n-1] <= S) {
-            return t[n][S] = min(1 + minCoinsToGetS(coins, n, S-coins[n-1], t), minCoinsToGetS(coins, n-1, S, t));
-        } else
-            return t[n][S] = minCoinsToGetS(coins, n-1, S, t);
+        for(int i=1;i*i<=n;i++){
+            int sqnum=i*i;
+            int count=1+solve(n-sqnum);
+            ans=min(ans,count);
+            
+        }
+        return  dp[n]=ans;
     }
-    int numSquares(int S) {
-        vector<int> coins;
-        for(int i = 1; i*i<=S; i++) {
-            coins.push_back(i*i);
-        }
-        int n = coins.size();
-        
-        vector<vector<int>> t(n+1, vector<int>(S+1, -1));
-        return minCoinsToGetS(coins, n, S, t);
+    int numSquares(int n) {
+       return solve(n);
     }
 };
