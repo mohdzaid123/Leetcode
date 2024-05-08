@@ -4,30 +4,33 @@ public:
         int n=score.size();
         vector<string>result(n);
         
-        priority_queue<pair<int,int>>pq;
+        int M=*max_element(begin(score),end(score));
+        
+        vector<int>mp(M+1,-1);
         
         for(int i=0;i<n;i++){
-            pq.push({score[i],i});
+            mp[score[i]]=i;
         }
         
         int rank=1;
-        
-        while(!pq.empty()){
-            int idx=pq.top().second;
+        for(int s=M;s>=0;s--){
             
-            pq.pop();
-            
-            if(rank==1){
-                result[idx]="Gold Medal";
-            }else if(rank==2){
-                result[idx]="Silver Medal";
-            }else if(rank==3){
-                result[idx]="Bronze Medal";
-            }else{
-                result[idx]=to_string(rank);
-            }
-            rank++;
+           if(mp[s]!=-1){
+               int athelete=mp[s];
+               
+               if(rank==1){
+                   result[athelete]="Gold Medal";
+               }else if(rank==2){
+                   result[athelete]="Silver Medal";
+               }else if(rank==3){
+                   result[athelete]="Bronze Medal";
+               }else{
+                    result[athelete]=to_string(rank);
+               }
+               rank++;
+           }
         }
         return result;
     }
+    
 };
