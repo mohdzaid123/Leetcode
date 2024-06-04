@@ -1,21 +1,25 @@
 class Solution {
 public:
     int longestPalindrome(string s) {
-        int n=s.length();
-        unordered_set<char>st;
+     int n=s.length();
+      unordered_map<char,int>mp;  
         
-        int result=0;
-        
-        for(char &ch:s){
-            if(st.count(ch)){
-                result+=2;
-                st.erase(ch);
-            }else{
-                st.insert(ch);
-            }
+        for(char ch:s){
+            mp[ch]++;
         }
         
-        if(!st.empty()){
+        int result=0;
+        bool oddFreq=false;
+        
+        for(auto& it:mp ){
+            if(it.second%2==0){
+                result+=it.second;
+            }else{
+                result+=it.second-1;
+                oddFreq=true;
+            }
+        }
+        if(oddFreq){
             result++;
         }
         return result;
