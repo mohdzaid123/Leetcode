@@ -1,18 +1,20 @@
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
-        int m=matrix.size();
-        int n=m;
-
-        // transpose nikalo
-        for(int i=0;i<m;i++){
-                for(int j=i;j<n;j++){
-                        swap(matrix[i][j],matrix[j][i]);
-                }
+        int n = matrix.size();
+        
+        // Step 1: Transpose the matrix
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < i; j++) {
+                swap(matrix[i][j], matrix[j][i]);
+            }
         }
-        // reverse row of the matrix
-        for(int i=0;i<m;i++){
-            reverse(matrix[i].begin(),matrix[i].end());
+        
+        // Step 2: Reverse each row
+        for(int i = 0; i < n; i++) {
+           
+               reverse(matrix[i].begin(), matrix[i].end());
+            
         }
     }
 };
