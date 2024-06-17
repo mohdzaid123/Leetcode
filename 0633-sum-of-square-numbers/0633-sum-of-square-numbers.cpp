@@ -1,15 +1,24 @@
 class Solution {
 public:
     bool judgeSquareSum(int c) {
-        for(long a = 0; a*a <= c; a++) {
-            double b = sqrt(c - a*a);
-
-            if(b == (int)b) {
+     if(c<0){
+         return false;
+     }   
+        long left=0;
+        long right=sqrt(c);
+        
+        while(left<=right){
+            long sum=left*left+right*right;
+            
+            if(sum==c){
                 return true;
             }
-
+            else if(sum<c){
+                left++;
+            }else{
+                right--;
+            }
         }
-
         return false;
     }
 };
