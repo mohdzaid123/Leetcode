@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/mohdzaid123/Leetcode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/mohdzaid123/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2358-number-of-ways-to-split-array](https://github.com/mohdzaid123/Leetcode/tree/master/2358-number-of-ways-to-split-array) |
@@ -59,6 +60,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/mohdzaid123/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2465-shifting-letters-ii](https://github.com/mohdzaid123/Leetcode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/mohdzaid123/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
@@ -69,4 +71,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2358-number-of-ways-to-split-array](https://github.com/mohdzaid123/Leetcode/tree/master/2358-number-of-ways-to-split-array) |
 | [2465-shifting-letters-ii](https://github.com/mohdzaid123/Leetcode/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/mohdzaid123/Leetcode/tree/master/2691-count-vowel-strings-in-ranges) |
+## String Matching
+|  |
+| ------- |
+| [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
 <!---LeetCode Topics End-->
