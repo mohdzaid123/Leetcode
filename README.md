@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/mohdzaid123/Leetcode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/mohdzaid123/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
@@ -60,6 +61,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/mohdzaid123/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2465-shifting-letters-ii](https://github.com/mohdzaid123/Leetcode/tree/master/2465-shifting-letters-ii) |
@@ -75,4 +77,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
+## Hash Table
+|  |
+| ------- |
+| [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
 <!---LeetCode Topics End-->
