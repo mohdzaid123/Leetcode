@@ -5,20 +5,30 @@ int n;
     ProductOfNumbers() {
         nums.clear();
         n=0;
-            }
+     }
     
     void add(int num) {
-        nums.push_back(num);
+      if(num==0){
+            nums={};
+            n=0;
+      }else{
+            if(nums.empty()){
+                nums.push_back(num);
+            }else{
+                nums.push_back(nums[n-1]*num);
+            }
+
+            n++;
+      }
     }
     
     int getProduct(int k) {
-        int prod=1;
-        int n=nums.size();
-
-        for(int i=n-k;i<n;i++){
-            prod*=nums[i];
+        if(k>n){
+return 0; 
+        }else if(k==n){
+                return nums[n-1];
         }
-        return prod; 
+        return nums[n-1]/nums[n-k-1]; 
     }
 };
 
