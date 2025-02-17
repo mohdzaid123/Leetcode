@@ -67,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
+| [1160-letter-tile-possibilities](https://github.com/mohdzaid123/Leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/mohdzaid123/Leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2465-shifting-letters-ii](https://github.com/mohdzaid123/Leetcode/tree/master/2465-shifting-letters-ii) |
@@ -87,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
+| [1160-letter-tile-possibilities](https://github.com/mohdzaid123/Leetcode/tree/master/1160-letter-tile-possibilities) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/mohdzaid123/Leetcode/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 ## Sorting
 |  |
@@ -112,5 +114,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Backtracking
 |  |
 | ------- |
+| [1160-letter-tile-possibilities](https://github.com/mohdzaid123/Leetcode/tree/master/1160-letter-tile-possibilities) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/mohdzaid123/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
+## Counting
+|  |
+| ------- |
+| [1160-letter-tile-possibilities](https://github.com/mohdzaid123/Leetcode/tree/master/1160-letter-tile-possibilities) |
 <!---LeetCode Topics End-->
