@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/mohdzaid123/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
 | [1477-product-of-the-last-k-numbers](https://github.com/mohdzaid123/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
@@ -127,4 +128,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2456-construct-smallest-number-from-di-string](https://github.com/mohdzaid123/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
+## Two Pointers
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/mohdzaid123/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
