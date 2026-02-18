@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/mohdzaid123/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/mohdzaid123/Leetcode/tree/master/0027-remove-element) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/mohdzaid123/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
 | [1477-product-of-the-last-k-numbers](https://github.com/mohdzaid123/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
@@ -38,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/mohdzaid123/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/mohdzaid123/Leetcode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 ## Greedy
 |  |
