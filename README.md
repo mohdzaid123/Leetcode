@@ -26,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0268-missing-number](https://github.com/mohdzaid123/Leetcode/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/mohdzaid123/Leetcode/tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/mohdzaid123/Leetcode/tree/master/0485-max-consecutive-ones) |
+| [0704-binary-search](https://github.com/mohdzaid123/Leetcode/tree/master/0704-binary-search) |
 | [0952-word-subsets](https://github.com/mohdzaid123/Leetcode/tree/master/0952-word-subsets) |
 | [1477-product-of-the-last-k-numbers](https://github.com/mohdzaid123/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1524-string-matching-in-an-array](https://github.com/mohdzaid123/Leetcode/tree/master/1524-string-matching-in-an-array) |
@@ -41,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/mohdzaid123/Leetcode/tree/master/0268-missing-number) |
+| [0704-binary-search](https://github.com/mohdzaid123/Leetcode/tree/master/0704-binary-search) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/mohdzaid123/Leetcode/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 ## Dynamic Programming
 |  |
