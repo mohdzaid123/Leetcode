@@ -117,6 +117,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 |  |
 | ------- |
+| [0231-power-of-two](https://github.com/mohdzaid123/Leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/mohdzaid123/Leetcode/tree/master/0268-missing-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/mohdzaid123/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/mohdzaid123/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
@@ -154,5 +155,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0136-single-number](https://github.com/mohdzaid123/Leetcode/tree/master/0136-single-number) |
+| [0231-power-of-two](https://github.com/mohdzaid123/Leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/mohdzaid123/Leetcode/tree/master/0268-missing-number) |
+## Recursion
+|  |
+| ------- |
+| [0231-power-of-two](https://github.com/mohdzaid123/Leetcode/tree/master/0231-power-of-two) |
 <!---LeetCode Topics End-->
